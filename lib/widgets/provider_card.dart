@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/provider_model.dart';
+import '../screens/booking_screen.dart';
 import '../theme/app_theme.dart';
 
 class ProviderCard extends StatelessWidget {
@@ -17,7 +18,14 @@ class ProviderCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppRadius.md),
       ),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => BookingScreen(provider: provider),
+            ),
+          );
+        },
         borderRadius: BorderRadius.circular(AppRadius.md),
         child: Padding(
           padding: const EdgeInsets.all(AppSpacing.md),
@@ -177,7 +185,14 @@ class ProviderCard extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => BookingScreen(provider: provider),
+              ),
+            );
+          },
           borderRadius: BorderRadius.circular(AppRadius.sm),
           child: const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
