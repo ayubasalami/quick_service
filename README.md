@@ -10,23 +10,6 @@ Approximately **1 hour 40 minutes**
 
 I chose **Riverpod** as the state management solution for this project. Riverpod provides a robust, compile-safe approach to state management with excellent testability and no context dependency. I implemented a `BookingViewModel` using `StateNotifier` to manage the booking flow, handling date selection, time slot selection, duration changes, and price calculations in a clean, organized manner.
 
-## Setup Instructions
-
-1. Clone the repository
-   ```bash
-   git clone <your-repository-url>
-   cd <project-folder>
-   ```
-
-2. Install dependencies
-   ```bash
-   flutter pub get
-   ```
-
-3. Run the application
-   ```bash
-   flutter run
-   ```
 
 ## Flutter Version
 
